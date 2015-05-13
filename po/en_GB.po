@@ -1770,6 +1770,11 @@ msgid ""
 "core."
 msgstr ""
 
+#: ../src/core/coreauthhandler.cpp:212
+msgctxt "CoreAuthHandler|"
+msgid "Invalid username or password:"
+msgstr ""
+
 #: ../src/core/coreauthhandler.cpp:202
 msgctxt "CoreAuthHandler|"
 msgid ""

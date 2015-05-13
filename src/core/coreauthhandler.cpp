@@ -209,6 +209,7 @@ void CoreAuthHandler::handle(const Login &msg)
 
     UserId uid = Core::validateUser(msg.user, msg.password);
     if (uid == 0) {
+        qWarning() << qPrintable(tr("Invalid username or password:")) << qPrintable(socket()->peerAddress().toString());
         _peer->dispatch(LoginFailed(tr("<b>Invalid username or password!</b><br>The username/password combination you supplied could not be found in the database.")));
         return;
     }
